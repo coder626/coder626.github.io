@@ -1,0 +1,31 @@
+body {
+    background-image: url('pexels-soly-moses-11483823.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* This sets the body height to 100% of the viewport height */
+    margin: 0; /* Remove default margin */
+}
+.tabs {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.tabs li {
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tabs li:hover {
+    background-color: #555;
+}
+
+.tabs li.active {
+    background-color: #555;
+}
