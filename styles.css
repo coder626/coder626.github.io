@@ -3,23 +3,38 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh; /* This sets the body height to 100% of the viewport height */
-    margin: 0; /* Remove default margin */
+    height: 100vh;
+    margin: 0;
+    position: relative;
 }
+
 .tabs {
     list-style: none;
     display: flex;
-    justify-content: center;
-    background-color: #333;
-    padding: 10px 0;
+    flex-direction: column;
+    justify-content: center; /* Vertically center tabs */
+    align-items: flex-start;
+    padding: 0; /* Remove padding */
     margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Extend tabs vertically */
+    width: 300px; /* Set a fixed width for the tabs */
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden; /* Hide any overflow content */
 }
 
 .tabs li {
-    padding: 10px 20px;
+    padding: 15px 20px; /* Increase padding for more space */
+    margin-bottom: 5px;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-size: 50px; /* Increase font size */
+    font-family: serif; /* Change to desired font */
+    align-items: flex-start;
+    left: auto;
 }
 
 .tabs li:hover {
