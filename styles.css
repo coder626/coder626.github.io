@@ -50,11 +50,31 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 30px;
+    height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.GithubButton {
+    width: 60px; /* Adjust the width and height to match your image */
+    height: 70px;
+    background-image: url('github.png'); /* Replace with your image file path */
+    background-size: cover; /* Adjust background size as needed */
+    background-repeat: no-repeat;
+    border: none; /* Remove the default button border */
+    cursor: pointer; /* Add a pointer cursor for interactivity */
+}
+
+.LinkedinButton {
+    width: 60px; /* Adjust the width and height to match your image */
+    height: 70px;
+    background-image: url('linkedin.png'); /* Replace with your image file path */
+    background-size: cover; /* Adjust background size as needed */
+    background-repeat: no-repeat;
+    border: none; /* Remove the default button border */
+    cursor: pointer; /* Add a pointer cursor for interactivity */
 }
 
 .footer button {
