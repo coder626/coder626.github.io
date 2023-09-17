@@ -52,9 +52,18 @@ body {
     height: 70vh; /* Adjust the height as needed */
 }
 
-.textbox {
-    text-align: center;
-    font-size: 50px;
+.image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Set a minimum height to center vertically */
+}
+
+/* Add CSS styles for the image */
+.centered-image {
+    display: block;
+    max-width: 40%; /* Limit the image width to its container */
+    max-height: 40%; /* Limit the image height to its container */
 }
 
 .footer {
