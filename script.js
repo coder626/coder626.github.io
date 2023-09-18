@@ -21,3 +21,15 @@ linkedinButton.addEventListener("click", function() {
     // Use window.location to navigate to the URL
     window.location.href = url;
 });
+
+// Get the button element by its ID
+const headerButton = document.getElementById("headerButton");
+
+// Add a click event listener to the button
+headerButton.addEventListener("click", function() {
+    // Define the URL of the page you want to navigate to
+    const destinationPage = "resume.html"; // Change to the desired page
+
+    // Use window.location.href to navigate to the URL
+    window.location.href = destinationPage;
+});
