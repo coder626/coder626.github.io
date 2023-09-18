@@ -52,6 +52,18 @@ body {
     height: 70vh; /* Adjust the height as needed */
 }
 
+.kevin-text-box {
+    text-align: center; /* Center the text horizontally */
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    padding: 1px; /* Add padding for spacing around the text */
+    position: absolute; /* Position it absolutely within a relative container */
+    top: 100px; /* Adjust the top position to control how far it is from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 2; /* Set a higher z-index to ensure it's above the image */
+    font-size: 24px; /* Increase the font size to your desired value */
+}
+
 .image-container {
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -62,8 +74,8 @@ body {
 /* Add CSS styles for the image */
 .centered-image {
     display: block;
-    max-width: 40%; /* Limit the image width to its container */
-    max-height: 40%; /* Limit the image height to its container */
+    max-width: 50%; /* Limit the image width to its container */
+    max-height: 50%; /* Limit the image height to its container */
 }
 
 .footer {
@@ -72,7 +84,8 @@ body {
     left: 0;
     width: 100%;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color */
+    /*background-color: rgba(255, 255, 255, 1);*/
     display: flex;
     justify-content: center;
     align-items: center;
