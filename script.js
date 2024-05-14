@@ -20,6 +20,8 @@ linkedinButton.addEventListener("click", function() {
 
     // Use window.location to navigate to the URL
     window.location.href = url;
+
+    //this is a comment
 });
 
 // Get the button element by its ID
