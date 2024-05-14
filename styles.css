@@ -1,105 +1,108 @@
 body {
-    background-image: url('pexels-soly-moses-11483823.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    margin: 0;
-    position: relative;
+  background-image: url("pexels-soly-moses-11483823.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  position: relative;
 }
 
-
 .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Adjust the height as needed */
 }
 
 header {
-    text-align: center; /* Center-align the contents horizontally */
-    padding: 20px; /* Add some padding for spacing */
-    background-color: #333; /* Add a background color */
-    color: white; /* Set the text color to white */
+  text-align: center; /* Center-align the contents horizontally */
+  padding: 20px; /* Add some padding for spacing */
+  background-color: #333; /* Add a background color */
+  color: white; /* Set the text color to white */
 }
 
 header button {
-    width: 120px; /* Adjust the width to your desired size */
-    height: 40px; /* Adjust the height to your desired size */
-    font-size: 18px; /* Adjust the font size to your desired size */
+  width: 120px; /* Adjust the width to your desired size */
+  height: 40px; /* Adjust the height to your desired size */
+  font-size: 18px; /* Adjust the font size to your desired size */
 }
 
-
 .kevin-text-box {
-    text-align: center; /* Center the text horizontally */
-    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
-    padding: 1px; /* Add padding for spacing around the text */
-    position: absolute; /* Position it absolutely within a relative container */
-    top: 100px; /* Adjust the top position to control how far it is from the top */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    z-index: 2; /* Set a higher z-index to ensure it's above the image */
-    font-size: 24px; /* Increase the font size to your desired value */
+  text-align: center; /* Center the text horizontally */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Add a semi-transparent white background */
+  padding: 1px; /* Add padding for spacing around the text */
+  position: absolute; /* Position it absolutely within a relative container */
+  top: 100px; /* Adjust the top position to control how far it is from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 2; /* Set a higher z-index to ensure it's above the image */
+  font-size: 24px; /* Increase the font size to your desired value */
 }
 
 .image-container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Set a minimum height to center vertically */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Set a minimum height to center vertically */
 }
 
 /* Add CSS styles for the image */
 .centered-image {
-    display: block;
-    max-width: 50%; /* Limit the image width to its container */
-    max-height: 50%; /* Limit the image height to its container */
+  display: block;
+  max-width: 50%; /* Limit the image width to its container */
+  max-height: 50%; /* Limit the image height to its container */
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-color: white /* Add a semi-transparent background color */;
-    /*background-color: rgba(255, 255, 255, 1);*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: white /* Add a semi-transparent background color */;
+  /*background-color: rgba(255, 255, 255, 1);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .GithubButton {
-    width: 80px; /* Adjust the width and height to match your image */
-    height: 80px;
-    background-image: url('github2.png'); /* Replace with your image file path */
-    background-size: cover; /* Adjust background size as needed */
-    background-repeat: no-repeat;
-    border: none; /* Remove the default button border */
-    cursor: pointer; /* Add a pointer cursor for interactivity */
-    background-color: transparent;
+  width: 80px; /* Adjust the width and height to match your image */
+  height: 80px;
+  background-image: url("github2.png"); /* Replace with your image file path */
+  background-size: cover; /* Adjust background size as needed */
+  background-repeat: no-repeat;
+  border: none; /* Remove the default button border */
+  cursor: pointer; /* Add a pointer cursor for interactivity */
+  background-color: transparent;
 }
 
 .LinkedinButton {
-    width: 80px; /* Adjust the width and height to match your image */
-    height: 80px;
-    background-image: url('linkedin2.png'); /* Replace with your image file path */
-    background-size: cover; /* Adjust background size as needed */
-    background-repeat: no-repeat;
-    border: none; /* Remove the default button border */
-    cursor: pointer; /* Add a pointer cursor for interactivity */
+  width: 80px; /* Adjust the width and height to match your image */
+  height: 80px;
+  background-image: url("linkedin2.png"); /* Replace with your image file path */
+  background-size: cover; /* Adjust background size as needed */
+  background-repeat: no-repeat;
+  border: none; /* Remove the default button border */
+  cursor: pointer; /* Add a pointer cursor for interactivity */
 }
 
 .footer button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    color: white;
-    background-color: #555;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: white;
+  background-color: #555;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .footer button:hover {
-    background-color: #777;
+  background-color: #777;
 }
