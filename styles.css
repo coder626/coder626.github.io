@@ -1,108 +1,147 @@
-body {
-  background-image: url("pexels-soly-moses-11483823.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+:root {
+  --h3-font-size: 1.5rem;
+  --h4-font-size: 1.2rem;
+}
+
+body, html {
   margin: 0;
-  position: relative;
-}
-
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh; /* Adjust the height as needed */
-}
-
-header {
-  text-align: center; /* Center-align the contents horizontally */
-  padding: 20px; /* Add some padding for spacing */
-  background-color: #333; /* Add a background color */
-  color: white; /* Set the text color to white */
-}
-
-header button {
-  width: 120px; /* Adjust the width to your desired size */
-  height: 40px; /* Adjust the height to your desired size */
-  font-size: 18px; /* Adjust the font size to your desired size */
-}
-
-.kevin-text-box {
-  text-align: center; /* Center the text horizontally */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Add a semi-transparent white background */
-  padding: 1px; /* Add padding for spacing around the text */
-  position: absolute; /* Position it absolutely within a relative container */
-  top: 100px; /* Adjust the top position to control how far it is from the top */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center horizontally */
-  z-index: 2; /* Set a higher z-index to ensure it's above the image */
-  font-size: 24px; /* Increase the font size to your desired value */
-}
-
-.image-container {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Set a minimum height to center vertically */
-}
-
-/* Add CSS styles for the image */
-.centered-image {
-  display: block;
-  max-width: 50%; /* Limit the image width to its container */
-  max-height: 50%; /* Limit the image height to its container */
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  padding: 0;
   width: 100%;
-  height: 100px;
-  background-color: white /* Add a semi-transparent background color */;
-  /*background-color: rgba(255, 255, 255, 1);*/
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  width: 40%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid black;
+  position: fixed;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li {
+  display: inline;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+#intro {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.GithubButton {
-  width: 80px; /* Adjust the width and height to match your image */
-  height: 80px;
-  background-image: url("github2.png"); /* Replace with your image file path */
-  background-size: cover; /* Adjust background size as needed */
-  background-repeat: no-repeat;
-  border: none; /* Remove the default button border */
-  cursor: pointer; /* Add a pointer cursor for interactivity */
-  background-color: transparent;
-}
-
-.LinkedinButton {
-  width: 80px; /* Adjust the width and height to match your image */
-  height: 80px;
-  background-image: url("linkedin2.png"); /* Replace with your image file path */
-  background-size: cover; /* Adjust background size as needed */
-  background-repeat: no-repeat;
-  border: none; /* Remove the default button border */
-  cursor: pointer; /* Add a pointer cursor for interactivity */
-}
-
-.footer button {
-  padding: 10px 20px;
-  margin: 0 10px;
+  height: 100vh;
+  background: url('background.jpg') no-repeat center center/cover;
+  text-align: center;
   color: white;
-  background-color: #555;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  padding: 0;
 }
 
-.footer button:hover {
-  background-color: #777;
+.intro-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 5px solid white;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+#experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('background.jpg') no-repeat center center/cover;
+  text-align: center;
+  color: black;
+  padding: 20px;
+}
+
+#experience h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.experience-box {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.experience-box h3.experience-company {
+  margin-top: 0;
+  font-size: var(--h3-font-size);
+}
+
+.experience-box h4.experience-title {
+  margin: 10px 0;
+  font-size: var(--h4-font-size);
+  color: #333;
+}
+
+.experience-box p {
+  margin-bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .profile-picture {
+    width:

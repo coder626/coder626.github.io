@@ -1,26 +1,43 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Example</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <button id="headerButton">Resume</button>
-    </header>
-
-    <!-- Add a text box above the image -->
-    <div class="kevin-text-box">
-      <p>Kevin Lavelle</p>
-    </div>
-
-    <div class="image-container">
-      <img src="kevin.jpg" alt="Centered Image" class="centered-image" />
-    </div>
-    <div class="footer">
-      <button class="GithubButton" id="GithubButton"></button>
-      <button class="LinkedinButton" id="LinkedinButton"></button>
-    </div>
-  </body>
-  <script src="script.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#intro">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="https://www.linkedin.com/in/kevin-lavelle-a89298115/" target="_blank">LinkedIn</a></li>
+            <li><a href="path-to-your-resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    <section id="intro">
+        <div class="intro-content">
+            <div class="profile-picture">
+                <img src="kevin.jpg" alt="Your Name">
+            </div>
+            <h1>Kevin Lavelle</h1>
+            <p>Aspiring Software Engineer</p>
+        </div>
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-container">
+          <div class="experience-box">
+              <h3 class="experience-company">Rivian Automotive</h3>
+              <h4 class="experience-title">Software Engineer Intern</h4>
+              <p>Software Engineer Intern for the Infotainment team. Current project involves creating a computer vision application to improve user experience with already-existing media videos in Java, Kotlin, and Python for Android applications. Full Agile process with sprints and weekly stand-ups. Additional work involving embedded systems programming and machine learning model compression for use in low-power settings. Patent potentially pending.</p>
+          </div>
+          <div class="experience-box">
+            <h3 class="experience-company">Toyon Research Corporation</h3>
+            <h4 class="experience-title">Software Developer</h4>
+            <p>Created software for the a Department of Defense Android application. Experience implementing computer vision (OpenCV) and machine learning (TensorFlow) models and algorithms in Android. Created a SQLite database for a plugin with full fronted and backend support, mostly in Java. Fixed a camera orientation issue involving the Yolov7 CNN and Tencent’s Android Camera code. Worked on a second project involving corrected the rolling shutter effect on cameras in C++.</p>
+        </div>
+      </div>
+  </section>
+</body>
 </html>
