@@ -13,17 +13,18 @@ body, html {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .name {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   margin: 0;
   color: var(--primary-color);
@@ -31,16 +32,18 @@ body, html {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
   color: var(--secondary-color);
   margin: 1rem 0 2rem;
 }
 
 .social-links {
   display: flex;
-  gap: 3rem;
+  gap: clamp(1.5rem, 4vw, 3rem);
   margin-top: 2rem;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .social-link {
@@ -50,12 +53,12 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 64px;
+  height: clamp(48px, 10vw, 64px);
 }
 
 .social-icon {
-  width: 64px;
-  height: 64px;
+  width: clamp(48px, 10vw, 64px);
+  height: clamp(48px, 10vw, 64px);
   transition: transform 0.3s ease;
 }
 
@@ -63,31 +66,39 @@ body, html {
   transform: scale(1.1);
 }
 
-.email {
-  font-size: 1.8rem;
+.contact-button {
+  background: #4A90E2;
+  color: white;
+  padding: 0 1.5rem;
+  border-radius: 12px;
+  font-size: clamp(1rem, 3vw, 1.2rem);
   font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(48px, 10vw, 64px);
+  min-width: clamp(80px, 15vw, 90px);
+  margin: 0;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .name {
-    font-size: 3rem;
-  }
-  
-  .title {
-    font-size: 1.2rem;
+.contact-button:hover {
+  background: #357ABD;
+  transform: translateY(-2px);
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+  .hero {
+    padding: 1rem;
   }
   
   .social-links {
-    gap: 2rem;
+    gap: 1.5rem;
   }
   
-  .social-icon {
-    width: 56px;
-    height: 56px;
-  }
-  
-  .email {
-    font-size: 1.6rem;
+  .contact-button {
+    padding: 0 1.2rem;
   }
 }
