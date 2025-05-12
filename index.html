@@ -42,6 +42,72 @@
             background: #357ABD;
             transform: translateY(-2px);
         }
+
+        /* Experience Section Styles */
+        .experience-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 4rem auto 2rem;
+            padding: 0 2rem;
+        }
+
+        .experience-title {
+            text-align: center;
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            color: var(--primary-color);
+            margin-bottom: 2.5rem;
+        }
+
+        .experience-boxes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .experience-box {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            width: 100%;
+            max-width: 800px;
+            transition: transform 0.3s ease;
+        }
+
+        .experience-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .company {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .position {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #4A90E2;
+            margin-bottom: 0.5rem;
+        }
+
+        .period, .location {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            color: var(--secondary-color);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .experience-box {
+                flex: 1 1 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -61,5 +127,34 @@
             <a href="mailto:kevinglavelle@gmail.com" class="contact-button">Contact</a>
         </div>
     </main>
+
+    <section class="experience-section">
+        <h2 class="experience-title">Work Experience</h2>
+        <div class="experience-boxes">
+            <div class="experience-box">
+                <div class="company">Sprout Social</div>
+                <div class="position">Software Engineer</div>
+                <div class="period">June 2025 - Present</div>
+                <div class="location">Los Angeles, CA (Remote)</div>
+                <div class="description">Incoming software engineer at Sprout Social. Team placement TBD.</div>
+            </div>
+
+            <div class="experience-box">
+                <div class="company">Rivian</div>
+                <div class="position">Software Engineer Intern - Computer Vision/Android</div>
+                <div class="period">June 2024 - September 2024</div>
+                <div class="location">Palo Alto, CA</div>
+                <div class="description">Created a computer vision application to improve user experience with already-existing media videos in Java, Kotlin, and Python for Android applications with 90% less computational power required. Built full video processing pipeline for offline rendering. Additional work involving embedded systems programming and machine learning model compression for use in low-power settings. Patent pending.</div>
+            </div>
+
+            <div class="experience-box">
+                <div class="company">Toyon Research Corporation</div>
+                <div class="position">Software Engineer Intern</div>
+                <div class="period">June 2023 - March 2024</div>
+                <div class="location">Goleta, CA</div>
+                <div class="description">Reduced false readings in computer vision project by 25% with a linear interpolation algorithm. Created software for the Android Tactical Assault Kit (ATAK). Experience implementing computer vision (OpenCV) and machine learning (TensorFlow) models and algorithms in Android. Created a SQLite database for a plugin with full fronted and backend support, mostly in Java. Fixed a camera orientation issue involving the Yolov7 CNN and Tencent's Android Camera code.</div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
